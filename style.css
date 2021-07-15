@@ -9,7 +9,14 @@ body {
     font-size: larger;
 
 }
-
+.container {
+    /* min-height: 100vh; */
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 main {
     padding: 5rem 0;
     flex: 1;
@@ -47,29 +54,25 @@ form {
 
 input {
     flex-direction: column;
-    color: #d9d9d962;
+    background-color:snow;
+    color:rgb(41, 37, 37);
     border: 1px solid #d9d9d9;
     height: 4em;;
-    /* display: 'flex'; */
-    /* justify-content: 'center';
-    align-items: 'center'; */
-    font-size: 0.em;
-    width: 60em !important;
+    font-size: 0.75em;
+    font-weight:900;
 }
-input:focus {
-    color: #dfd2d2b0;
-    border: 1px solid #d3dd9c;
-  }
 
 output {
     margin-left: 90%;
+    font-size: 1.6em;
 }
 
   button {
     background-color: transparent;
     border-color: transparent;
-    color:smoke !important;
+    color:snow !important;
     font-weight: bolder;
+    font-size: larger;
   }
   
   button:focus {
@@ -79,6 +82,7 @@ output {
   .bigButton {
     background-color: transparent;
     border-color: transparent;
+    color:snow !important;
     font-weight: bolder;
     font-size: 19px;
     margin: 2px;
@@ -87,3 +91,55 @@ output {
   .bigButton:focus {
     border: 1px solid #d9d9d9;
   }
+
+/* named items pro- pronouns year/month/day is birthday */
+#nameInput {
+    width: 60em !important;
+}
+#yearInput, #monthInput, #dayInput {
+    margin:2em;
+    text-align: center;
+    background-color: transparent;
+    color:snow;
+}
+#proSection {
+    width:75em;
+}
+#proForm{
+    text-align: center;
+}
+#proInstruct {
+
+    opacity:50%;
+}
+
+.proButton {
+font-size: 3em;
+padding-left: 3em;
+padding-right: 1em;
+/* padding:1.10em */
+}
+
+#proSubmit {
+    margin-left:43%; 
+    margin-top: 1em;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border: 1px solid #e9e1ce;
+}
+input:focus {
+    color: #2f1f1fb0;
+    border: 1px solid #e9e1ce;
+  }
+  input:hover {
+
+    font-size: 0.78em;
+    background-color: #e6d7bd;
+    color: #694c1e;
+    box-shadow: whitesmoke;
+  }
+

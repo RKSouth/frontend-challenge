@@ -8,11 +8,12 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="name.js"></script>
+    <script type="text/javascript" src="birthday.js"></script>
     <style src="style.css"></style>
 
   </head>
   <body>
-
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <header>
       <div class="topnav">
         <h1 >Well Helllllooo there!</h1>
@@ -20,6 +21,7 @@
     </header>
 
 <main>
+    <!-- Asking for a users name -->
     <section>
         <h2 >Hudello</h2>
         <p>Welcome to our frontend coding challenge. Let's start off by introducing ourselves. I'm Hudello bot.
@@ -43,7 +45,75 @@
                   </p>
                 </section>
       </section>
+<!-- Asking for a Users Birthday -->
+      <section id="birthdaySection">
+        <p >
+            <br></br>Since this is your first time meeting me, let's say my birthday is today, <b id="myBDay"></b>.<br></br>
+            <b>When's your birthday?</b></p>
+
+            <form id ="birthdayForm">
+                <input 
+                    placeholder="Year ex 1988"
+                    name="year"
+                    id="yearInput"
+                  
+                />
+                <input
+                    placeholder="Month ex 02"
+                    name="month"
+                    id="monthInput"
+                />
+                <input 
+                    placeholder="Day ex 07"
+                    id="dayInput"
+                 
+                />
+                 <button 
+                class="bigbutton"
+                id="birthdayButtonSubmit"
+            >Go!</button>
+            </form>
+        <output id="birthdayOutput"></output>
+    </section>
+
+    <!-- pronounes -->
+    <section id="proSection">
+        <h2>Hudello</h2>
+        <p>
+          <br/>Now that I know you a little better;<br/> <b>what are your pronouns?</b> </p>
+        <div id="proForm">
+            <p id="proInstruct" >Select one</p>
+
+            <button  class="proButton"
+            name ="He/Him"
+           id="male"
+           >
+              He/Him
+            </button>
+     
+            <button class="proButton"
+              name="She/Her"
+              id="female"
+             >
+              She/Her
+            </button>
+        
+            <button class="proButton"
+              name ="They/Them"
+              id="neut"
+             >
+              They/Them
+            </button>
+        </div>
+        <button id="proSubmit">
+            Submit
+    </button>
+    <output id="prounOutput"></output>
+    </section>
 
 </main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script
   </body>
 </html>

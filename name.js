@@ -2,25 +2,45 @@ $(document).ready(function () {
 
 
     $("#nameGreeting").hide()
+    $("#birthdaySection").hide()
 
- $("#nameButtonSubmit").on("click", function (event) {
-     event.preventDefault();
-    console.log (event)
-    console.log("hi")
+    $("#nameButtonSubmit").on("click", function (event) {
+        event.preventDefault();
+        let name = $('#nameInput').val();
+        console.log(name)
+        if (name === null || name === '' || name.length === 0) {
+            alert("Please tell me your name");
 
-    changeFirstStep()
-});
+        } else {
+            finishedName(name)
+        }
+    });
 
-})
 
 
-function changeFirstStep() {
+
+function finishedName(name) {
     $("#nameForm").hide();
     $("#nameGreeting").show();
-    
-    let name = $('#nameInput').val();
+
+
     $("#nameOutput").append(name)
     $("#nameOutput2").append(name)
-  
-    console.log(name)
+    startBirthday();
+    console.log("finished name")
 }
+
+function startBirthday() {
+    let currentTime = moment().format('MMMM Do YYYY')
+    $("#myBDay").append(currentTime);
+    
+    $("#birthdaySection").show()
+    console.log("party has started");
+
+
+}
+
+
+
+
+})
