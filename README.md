@@ -20,7 +20,7 @@
 
 
 ## Deployed Site
-[Robots](https://pure-dawn-66807.herokuapp.com/)
+[Robots](https://rksouth.github.io/frontend-challenge/)
 
 ## Features 
  
