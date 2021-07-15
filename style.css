@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(41, 37, 37);
+    /* background-color: rgb(41, 37, 37); */
+    background: linear-gradient(50deg, rgb(41, 37, 37) 50%, rgb(37, 37, 41) 50%);
     color: snow;
     align-items: center;
 
@@ -56,7 +57,7 @@ input {
     flex-direction: column;
     background-color:snow;
     color:rgb(41, 37, 37);
-    border: 1px solid #d9d9d9;
+    border: 1px solid #c8cdee;
     height: 4em;;
     font-size: 0.75em;
     font-weight:900;
@@ -99,11 +100,12 @@ output {
 #yearInput, #monthInput, #dayInput {
     margin:2em;
     text-align: center;
+    width:20%;
     background-color: transparent;
     color:snow;
 }
 #proSection {
-    width:75em;
+    width:75%
 }
 #proForm{
     text-align: center;
@@ -114,9 +116,8 @@ output {
 }
 
 .proButton {
-font-size: 3em;
-padding-left: 3em;
-padding-right: 1em;
+font-size: 2em;
+width:20%
 /* padding:1.10em */
 }
 
@@ -129,17 +130,17 @@ padding-right: 1em;
     justify-content: center;
     align-items: center;
     font-size: 3em;
-    border: 1px solid #e9e1ce;
+    border: 1px solid #c0cfd1;
 }
 input:focus {
     color: #2f1f1fb0;
-    border: 1px solid #e9e1ce;
+    border: 1px solid #b4b5c3;
   }
   input:hover {
 
-    font-size: 0.78em;
-    background-color: #e6d7bd;
-    color: #694c1e;
+   
+    background-color: #bdd7e6;
+    color: #1e3069;
     box-shadow: whitesmoke;
   }
 

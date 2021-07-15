@@ -3,7 +3,6 @@ $(document).ready(function () {
 
     $("#nameGreeting").hide()
     $("#birthdaySection").hide()
-
     $("#nameButtonSubmit").on("click", function (event) {
         event.preventDefault();
         let name = $('#nameInput').val();
